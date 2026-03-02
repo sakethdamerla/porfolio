@@ -171,7 +171,7 @@ const Hero = () => {
                                 </button>
 
                                 <a
-                                    href="https://wa.me/8328251293"
+                                    href="https://wa.me/+918328251293"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="flex items-center justify-center gap-3 w-full p-4 bg-zinc-800 rounded-xl hover:bg-zinc-700 transition-colors group"
