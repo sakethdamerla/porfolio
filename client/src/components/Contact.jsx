@@ -52,12 +52,12 @@ const Contact = () => {
         <section id="contact" className="bg-transparent text-white py-8 md:py-12 px-4 md:px-6 flex items-center">
             <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
                 <div>
-                    <h2 className="text-3xl md:text-6xl font-bold mb-4 md:mb-6 tracking-tighter">GET IN TOUCH</h2>
-                    <p className="text-gray-400 mb-6 md:mb-8 max-w-md text-sm md:text-base">
+                    <h2 className="text-xl md:text-6xl font-bold mb-4 md:mb-6 tracking-tighter uppercase font-outline-2">GET IN TOUCH</h2>
+                    <p className="text-gray-400 mb-6 md:mb-8 max-w-md text-xs md:text-base">
                         Have a project in mind? Looking to partner or work together? Reach out through the form and I'll get back to you in the next 48 hours.
                     </p>
 
-                    <div className="space-y-4 text-sm text-gray-300">
+                    <div className="space-y-4 text-[10px] md:text-base text-gray-300">
                         <div className="flex items-center gap-3">
                             <FaEnvelope className="text-gray-500" />
                             <p>sakethdamerla@gmail.com</p>

@@ -13,16 +13,16 @@ const skills = [
     { name: 'MongoDB', icon: <SiMongodb size={40} className="text-green-500" /> },
     { name: 'Express', icon: <SiExpress size={40} className="text-white" /> },
     { name: 'Next.js', icon: <SiNextdotjs size={40} className="text-white" /> },
-    { name: 'Git', icon: <FaGitAlt size={40} className="text-orange-600" /> },
+    // { name: 'Git', icon: <FaGitAlt size={40} className="text-orange-600" /> },
 ];
 
 const Skills = () => {
     return (
         <section id="skills" className="bg-transparent text-white py-8 md:py-12 px-4 md:px-6">
             <div className="container mx-auto">
-                <h2 className="text-3xl md:text-6xl font-bold mb-8 md:mb-16 text-center tracking-tighter">SKILLS</h2>
+                <h2 className="text-xl md:text-6xl font-bold mb-6 md:mb-16 text-center tracking-tighter uppercase font-outline-2">SKILLS</h2>
 
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 md:gap-8 max-w-4xl mx-auto">
+                <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-5 gap-3 md:gap-8 max-w-4xl mx-auto">
                     {skills.map((skill, index) => (
                         <motion.div
                             key={index}
@@ -31,10 +31,12 @@ const Skills = () => {
                             transition={{ duration: 0.3, delay: index * 0.05 }}
                             whileHover={{ scale: 1.1, color: '#fff' }}
                             viewport={{ once: true }}
-                            className="bg-zinc-900/50 p-6 rounded-xl flex flex-col items-center justify-center gap-4 hover:bg-zinc-800 transition-colors border border-zinc-800"
+                            className="bg-zinc-900/50 p-3 md:p-6 rounded-xl flex flex-col items-center justify-center gap-2 md:gap-4 hover:bg-zinc-800 transition-colors border border-zinc-800"
                         >
-                            {skill.icon}
-                            <span className="font-medium text-gray-300">{skill.name}</span>
+                            <div className="scale-75 md:scale-100">
+                                {skill.icon}
+                            </div>
+                            <span className="text-[10px] md:text-base font-medium text-gray-300">{skill.name}</span>
                         </motion.div>
                     ))}
                 </div>
